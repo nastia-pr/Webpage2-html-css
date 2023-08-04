@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Información sobre las diferentes rutas para hacer running</title>
+    <link rel="stylesheet" href="css/estilos.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <header>
+        <div class="contenido_header">
+            <a href="index.html"><img src="img/isologo-white.png" alt="imagen del logo"></a>
+            <a class="ritmo" href="index.html">ritmo</a>
+            <nav>
+                <ul class="menu_navegacion">
+                    <li><a href="practica-el-running.html">Practica el running |</a></li>
+                    <li><a class="active" href="rutas.html">Rutas |</a></li>
+                    <li><a href="inscripcion-socios.html">Hazte socio</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <div class="container2">
+        <main>
+            <h1 class="box_h1">Actividades con Ritmo</h1>
+            <div class="caja_color">
+                <div class="texto_caja">
+                    <p>Corre en compañía y con asesoramiento de expertos</p>
+                    <p>Más información en <a class="link" href="mailto:info@ritmo.org">info@ritmo.org</a></p>
+                </div>
+            </div>
+                <p id="texto1">Nuestro club de running está formado por corredores aficionados de todos los niveles que quieren practicar este deporte en compañía.</p>
+                <p id="texto2">Las actividades del club se organizan en dos salidas semanales dirigidas tanto a los que quieren mejorar su condición física como a los que quieren entrenarse para futuras carreras, maratones o triatlones.</p>
+            <table>
+                <!--He entendido que para mejorar la accesibilidad de la tabla aquí debería ir un elemento <caption>
+                    indicando el contenido de la tabla, que sería Nuestras rutas, pero si lo hago así entonces la estructura 
+                    cambia completamente y nuestras rutas aparece por encima de la tabla y no "dentro", como está en la imagen 
+                    de referencia. Es decir, que las líneas que aparece por encima y por debajo de "nuestras rutas" desaparecen. 
+                    Por eso decidí meterlo en el thead, espero que sea correcto y si no, me gustaría saber cuál es la forma correcta
+                    de hacerlo! -->
+                <thead>
+                    <tr>
+                        <th scope="col" colspan="4">Nuestras rutas</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr class="estilos_tabla1">
+                        <th scope="col"> <div class="container_img"><img src="img/location.png" alt="imagen de un icono de ruta"></div><div class="container_txt">Ruta</div></th>
+                        <th scope="col"> <div class="container_img2"><img src="img/distance.png" alt="imagen de un icono de distancia"></div> <div class="container_txt2">Distancia</div></th>
+                        <th scope="col"> <div class="container_img3"><img src="img/time.png" alt="imagen de un icono de tiempo"></div><div class="container_txt3">Duración</div></th>
+                        <th scope="col"> <div class="container_img4"><img src="img/angle.png" alt="imagen de un icono de ángulo"></div><div class="container_txt4">Pendiente </div></th>
+                    </tr>
+                    <tr>
+                        <th scope="row" class="tabla_negrita">Para principiantes</th>
+                        <td>2,5km</td>
+                        <td>15 minutos</td>
+                        <td>Sin desnivel</td>
+                    </tr>
+                    <tr>
+                        <th scope="row" class="tabla_negrita">Hacia la cima</th>
+                        <td>3km</td>
+                        <td>30 minutos</td>
+                        <td>7 grados</td>
+                    </tr>
+                    <tr>
+                        <th scope="row" class="tabla_negrita">Dando una vuelta</th>
+                        <td>7km</td>
+                        <td>45 minutos</td>
+                        <td>4 grados</td>
+                    </tr>
+                    <tr>
+                      <th scope="row" class="tabla_negrita">Cerca del mar</th>
+                      <td>9km</td>
+                      <td>1 hora</td>
+                      <td>2 grados</td>
+                    </tr>
+                    <tr>
+                        <th scope="row" class="tabla_negrita">Larga distancia</th>
+                        <td>11km</td>
+                        <td>1 hora</td>
+                        <td>10 grados</td>
+                    </tr>
+                </tbody>
+                <tfoot>
+                    <tr>
+                        <td colspan="4"> Actividades guiadas por entrenadores especializados, dirigidas a los <a class="link" href="inscripcion-socios.html">socios de Ritmo</a></td>
+                    </tr>
+                </tfoot>
+            </table>
+        </main>
+    </div>
+
+    <footer class="estilos_footer">
+        <div class="contenido_footer">
+            <p class="nombre_footer">2022 © Anastasiya Pronyuk</p>
+            <ul class="menu_footer">
+                <li><a href="#">Aviso legal &middot; </a></li>
+                <li><a href="#">Política de privacidad &middot;</a></li>
+                <li><a href="#">Política de cookies</a></li>
+            </ul>
+        </div>
+    </footer>
+
+</body>
+</html>

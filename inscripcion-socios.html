@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de inscripción para el club de running ritmo</title>
+    <link rel="stylesheet" href="css/estilos.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <header>
+        <div class="contenido_header">
+            <a href="index.html"><img src="img/isologo-white.png" alt="imagen del logo"></a>
+            <a class="ritmo" href="index.html">ritmo</a>
+            <nav>
+                <ul class="menu_navegacion">
+                    <li><a href="practica-el-running.html">Practica el running |</a></li>
+                    <li><a href="rutas.html">Rutas |</a></li>
+                    <li><a class="active" href="inscripcion-socios.html">Hazte socio</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <div class="container2">
+        <main>
+            <h1 id="socio_header">Hazme socio del club de running Ritmo</h1>
+            <form>
+                <p id="campos">Los campos marcados con * son obligatorios</p>
+                <fieldset>
+                    <legend>Tipo de cuota *</legend>
+                    <div class="estilos_cuota">
+                        <input type="radio" id="mensual" name="cuota" value="mensual" required>
+                        <label for="mensual">Mensual (30 €) </label><br>
+                        <input type="radio" id="trimestral" name="cuota" value="trimestral" required>
+                        <label for="trimestral">Trimestral (45 €)</label><br>
+                        <input type="radio" id="anual" name="cuota" value="anual" required>
+                        <label for="anual">Anual (100 €)</label>
+                        </div>             
+                </fieldset>
+            
+                <fieldset>
+                    <legend>Datos personales y de contacto</legend>
+                    <div class="estilos_datos">
+                        <div class="alinear">
+                            <div id="nombre">
+                                <label for="nombre_user">Nombre *</label><br>
+                                <input id="nombre_user" type="text" name="nombre_user" pattern="^[-'a-zA-Z]{2,64}$" title="No se pueden escribir caracteres diferentes a letras, apóstrofes o guiones. La cantidad mínima de caracteres es 2 y la máxima es 64." required>
+                            </div>
+                            <div id="apellidos">
+                                <label for="apellidos_user">Apellidos *</label><br>
+                                <input id="apellidos_user" type="text" name="apellidos_user" pattern="^[-'a-zA-Z]{2,64}$" title="No se pueden escribir caracteres diferentes a letras, apóstrofes o guiones. La cantidad mínima de caracteres es 2 y la máxima es 128." required>
+                            </div>
+                        </div>
+                            
+                        <div class="alinear">
+                            <div id="correo">
+                                <label for="mail">Correo electrónico *</label><br>
+                                <input id="mail" type="email" name="mail_user" required>
+                            </div>
+                            <div id="telefono">
+                                <label for="telefono_user">Teléfono *</label><br>
+                                <input id="telefono_user" type="tel" name="telefono_user" required>
+                            </div>
+                        </div>
+    
+                        <div id="fecha">
+                            <label for="fecha_nacimiento">Fecha de nacimiento *</label><br>
+                            <input id="fecha_nacimiento" type="date" name="nacimiento_user" required>
+                        </div>
+
+                    </div>
+                </fieldset>
+
+                    <fieldset>
+                        <legend>Otras informaciones</legend>
+                        <div class="estilos_informacion">
+                            <label for="info">¿Por qué estás interesado en hacerte socio?</label><br>
+                            <textarea rows="8" cols="73" name="info" id="info"></textarea>
+                        </div>
+                        <div  class="estilos_informacion2">
+                            <label for="medio">¿Por qué medio nos ha conocido?</label><br>
+                            <select name="medio" id="medio">
+                            <option value="selecciona">Selecciona una opción</option>
+                            <option value="prensa">Prensa</option>
+                            <option value="facebook">Facebook</option>
+                            <option value="instagram">Instagram</option>
+                            <option value="otro">Otro socio</option>
+                            </select>
+                        </div>
+                        </fieldset>
+
+                    <fieldset>
+                        <legend>Pago</legend>
+                        <div class="titular">
+                            <label for="titular_cuenta">Titular de la cuenta *</label><br>
+                            <input id="titular_cuenta" type="text" name="titular_cuenta" required>
+                        </div>
+                        <div class="numero_cuenta">
+                            <label for="numero_cuenta">Número de cuenta *</label><br>
+                            <input id="numero_cuenta" type="text" name="numero_cuenta" required>
+                        </div>
+                    </fieldset>
+                
+           
+                    <p id="proteccion_datos">INFORMACIÓN SOBRE PROTECCIÓN DE DATOS DE <strong>RITMO</strong>. <strong>Finalidades</strong>: recogida de datos para la inscripción como socio del interesado. <strong>Legitimación</strong>: Consentimiento del intersado. <strong>Destinatarios</strong>: No están previstas cesiones de datos a terceros, excepto obligación legal. <strong>Derechos</strong>: Puede retirar su consentimieno en cualquier momento, así como acceder, rectificar, suprimir sus datos y otros derechos dirigiéndose a <a class="link" href="mailto:info@ritmo.org">info@ritmo.org</a>. <strong>Información Adicional</strong>: Puede ampliar la información en el enlace de <a class="link" href="#">Aviso legal</a> y <a class="link" href="#">Política de privacidad</a>.</p>
+                    <div>
+                        <label for="politica_privacidad"><input type="checkbox" id="politica_privacidad" name="politica_privacidad" value="yes" required>He leído y acepto la <a class="link" href="#">política de privacidad </a>*</label>
+                    </div>
+
+                    <p>
+                      <button type="submit" class="boton_estilos" value="enviar_el_formulario">ENVIAR</button>
+                    </p>
+            </form>
+        </main>
+    </div>
+
+    <footer class="estilos_footer">
+        <div class="contenido_footer">
+            <p class="nombre_footer">2022 © Anastasiya Pronyuk</p>
+            <ul class="menu_footer">
+                <li><a href="#">Aviso legal &middot; </a></li>
+                <li><a href="#">Política de privacidad &middot; </a></li>
+                <li><a href="#">Política de cookies</a></li>
+            </ul>
+        </div>
+    </footer>
+
+</body>
+</html>

@@ -1,0 +1,504 @@
+/* Estilos generales */
+
+* {
+    font-family: 'Work Sans', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Estilos primera página */
+
+.container {
+    width: 60%;
+    margin-left: 300px;
+}
+
+ul li a {
+    text-decoration: none;
+    padding: 5px 5px 5px 0;
+    color: white;
+}
+
+ul li a:hover {
+    color: rgb(222, 12, 23);
+}
+
+.menu_navegacion {
+    list-style: none;
+    display: flex;
+    font-size: .8rem;
+}
+
+.menu_footer {
+    list-style: none;
+    display: flex;
+    font-size: .7rem;
+    padding-top: 7px;
+}
+
+#imagen_fondo {
+    background-image: url("../img/home-hero.jpg");
+    background-size: cover;
+}
+
+.main_index {
+    height: 260px;
+}
+
+.box1 {
+    padding-top: 15px;
+    height: 180px;
+}
+
+.box2 {
+    font-size: 6rem;
+    font-weight: 700;
+    margin-left: 90px;
+    color: white;
+}
+
+.box_image {
+    float: left;
+    margin-top: 40px;
+}
+
+.box3 {
+    color: white;
+    font-weight: 700;
+    font-size: 1.5rem;
+}
+
+.box4 {
+    padding-bottom: 5px;
+    font-size: .6rem;
+    color: white;
+}
+
+.footer_index {
+    padding-top: 30px;
+    width:100%;
+    height:200px;
+    position: fixed;
+}
+/* Empiezan los estilos de la segunda página */
+
+/* Estilos para el header de las tres páginas menos index */
+header {
+    background-color: rgb(0, 0, 0);
+    height: 125px;
+    width: 100%;
+}
+
+header img {
+    float: left;
+    width: 20px;
+    height: 20px;
+    margin-top: 10px;
+}
+
+.ritmo {
+    text-decoration: none;
+    color: white;
+    margin-left: 10px;
+    font-weight: 700;
+    font-size: 2rem;
+}
+
+.contenido_header{
+    margin-left: 300px;
+    padding-top: 20px;
+}
+
+.menu_navegacion li a.active {
+    font-weight: 700;
+}
+
+/* Estilos para el main de las tres páginas menos index */
+
+.container2 {
+    margin-left: 300px;
+    width: 60%;
+    line-height: 25px;
+    color: rgb(23, 23, 23);
+}
+
+/* Estilos para el footer de las tres páginas menos index */
+.estilos_footer {
+    color: white;
+    background-color:rgb(0, 0, 0);
+    margin-top:50px;
+    width:100%;
+    height:100px;
+}
+
+.contenido_footer {
+    margin-left: 300px;
+    padding-top: 10px;
+}
+
+.nombre_footer {
+    font-size: .5rem;
+}
+
+/*  Estilos contenido principal segunda página -practica el running- */
+
+.centrar_video {
+   text-align: center;
+   margin: 30px 0 25px 0;
+}
+
+iframe {
+    width: 560px;
+    height: 315px;
+    border: none;
+}
+
+.estilosfigcap{
+    padding: 5px;
+    font-size: .6rem;
+}
+
+.link {
+    color: rgb(23, 23, 23);
+    text-decoration: none;
+    border-bottom:1px dotted  rgb(23, 23, 23);
+}
+
+.link:hover {
+    color: rgb(222, 12, 23);
+    border-bottom:1px dotted rgb(222, 12, 23);
+}
+
+#estilos_h1 {
+    margin-top: 20px;
+    padding: 30px 30px 10px 0;
+}
+
+#estilos_p1 {
+    padding: 20px 30px 10px 0;
+}
+
+#estilos_p2{
+    padding: 10px 30px 20px 0;;
+}
+
+.estilos_h2 {
+    padding: 0 30px 20px 0;
+}
+
+#estilos_p3{
+    padding: 0 30px 10px 0;
+}
+
+.estilos_lista {
+    margin: 10px 0 0px 30px;
+    line-height: 35px;
+    list-style: square;
+}
+
+#estilos_p4 {
+    padding: 15px 30px 10px 0;
+}
+
+#estilos_p5 {
+    font-size: .7rem;
+}
+
+/* Empiezan estilos tercera página -rutas-*/
+.box_h1 {
+    margin-top: 25px;
+    font-size: 1.3rem;
+}
+
+.caja_color {
+    background-color: rgba(0, 0, 0, 0.1);
+    margin: 15px 0 15px 0;
+    padding: 15px 0 15px 0;
+}
+
+.texto_caja {
+    text-align: center;
+}
+
+.texto_caja p:nth-child(odd) {
+    font-size: 1.2rem;
+}
+
+.texto_caja p:nth-child(even) {
+    font-size: 0.7rem;
+}
+
+#texto1, #texto2 {
+    margin-bottom: 15px;
+    font-size: .8rem;
+}
+
+/* Estilos tabla */
+
+table {
+    border-collapse: collapse;
+  }
+
+table tr th img {
+    width: 17px;
+    height: 17px;
+}
+
+.tabla_negrita {
+    font-weight: 700;
+    font-size: .9rem;
+    text-align: left;
+}
+
+table th {
+    font-weight: 400;
+}
+
+th, td {
+    padding: 3px;
+    border: 1px solid black;
+    border-left: none;
+    border-right: none;
+  }
+
+.estilos_tabla1 {
+    font-size: .7rem;
+}
+
+thead th {
+    width: 25%;
+}
+
+tbody td {
+    font-size: .7rem;
+    text-align: center;
+}
+  
+tbody tr:nth-child(even) {
+    background-color:rgba(0, 0, 0, 0.1);
+  }
+
+tbody tr:nth-child(3) {
+    border-style : hidden!important;
+}
+tbody tr:nth-child(4) {
+    border-style : hidden!important;
+}
+
+tbody tr:nth-child(5) {
+    border-style : hidden!important;
+}
+tbody tr:nth-child(6) {
+    border-style : hidden!important;
+}
+
+tfoot {
+    font-size: .6rem;
+    text-align: left;
+}
+
+.container_img {
+    display:flex;
+    padding-left: 5px;
+}
+
+.container_txt {
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+.container_img2 {
+    display:flex;
+    margin-left: 80px;
+}
+.container_txt2 {
+    display: flex;
+    margin: 0 0 0 65px;
+    padding: 0;
+}
+
+.container_img3 {
+    display:flex;
+    margin-left: 80px;
+}
+.container_txt3 {
+    display: flex;
+    margin: 0 0 0 65px;
+    padding: 0;
+}
+
+.container_img4 {
+    display:flex;
+    margin-left: 105px;
+}
+.container_txt4 {
+    display: flex;
+    margin: 0 0 0 85px;
+    padding: 0;
+}
+
+/* Empiezan los estilos de la cuarta página */
+
+#socio_header {
+    font-size: 1.5rem;
+    margin: 30px 0 20px 0px;
+}
+
+#campos {
+    margin-bottom: 5px;
+}
+
+form {
+    margin-left: 65px;
+    width: 80%;
+}
+
+form label {
+    font-size: .7rem;
+}
+
+form p {
+    font-size: .6rem;
+}
+
+fieldset {
+    border: 1px solid black;
+    margin-bottom: 10px;
+}
+
+fieldset legend {
+    font-weight: 700;
+    margin-left: 25px;
+}
+
+input, textarea, select {
+    border-radius: 0%;
+    border-width: 1px;
+}
+
+.estilos_cuota {
+    margin: 15px 0 20px 25px;
+    line-height: 30px;
+}
+
+.alinear {
+    display: flex;
+    flex-direction: row;
+}
+
+#nombre {
+    width: 45%;
+    padding-left: 25px;
+}
+
+#nombre input {
+    height: 30px;
+    width: 100%;
+    margin: 5px 0 5px 0;
+}
+
+#apellidos {
+    width: 45%;
+    padding-left: 15px;
+}
+
+#apellidos input {
+    height: 30px;
+    width: 90%;
+    margin: 5px 0 5px 0;
+}
+
+#correo {
+    width: 45%;
+    padding-left: 25px;
+}
+
+#correo input {
+    height: 30px;
+    width: 100%;
+    margin: 5px 0 5px 0;
+}
+
+#telefono {
+    width: 45%;
+    padding-left: 17px;
+}
+
+#telefono input {
+    height: 30px;
+    width: 90%;
+    margin: 5px 0 5px 0;
+}
+
+#fecha {
+    width: 50%;
+    padding-left: 25px;
+}
+
+#fecha input {
+    height: 30px;
+    width: 85%;
+    font-size: .6rem;
+    padding: 0 10px 0 5px;
+    margin: 5px 0 5px 0;
+}
+
+.estilos_datos{
+    margin: 15px 0 30px 0;
+}
+
+.estilos_informacion {
+    margin: 10px 0 0 25px;
+}
+
+.estilos_informacion2 {
+    margin: 0px 0 25px 25px;
+}
+
+.estilos_informacion2 select {
+    font-size: .6rem;
+    padding: 0 10px 0 10px;
+    width: 240px;
+    height: 30px;
+}
+
+.titular input, .numero_cuenta input {
+    width: 90%;
+    height: 30px;
+}
+
+.titular {
+    margin: 15px 0 5px 25px;
+}
+
+.numero_cuenta {
+    margin-left: 25px
+}
+
+.numero_cuenta input {
+    margin-bottom: 25px;
+}
+
+#proteccion_datos {
+    font-size: .7rem;
+    margin: 25px 0 10px 25px;
+    line-height: 15px;
+}
+
+#politica_privacidad{
+    margin: 0 4px 15px 25px;
+    width: 9px;
+    height: 9px;
+}
+
+.boton_estilos {
+    background-color:rgb(222, 12, 23);
+    color: white;
+    width: 70px;
+    height: 30px;
+    margin-left: 25px;
+    font-size: .7rem;
+    border-radius: 5px;
+    border-style: hidden;
+}
